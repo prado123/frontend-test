@@ -1,5 +1,172 @@
-body {
-  text-align: center;
-  font-size: 12px;
-  font-family: "Arial, sans-serif";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+ body {
+     line-height: 1;
+  background-color:#2b2b2b!important;
+
+}
+ ol, ul {
+     list-style: none;
+}
+ blockquote, q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+#topo {
+    width: 345px;
+    margin: auto;
+    height: 199px;
+}
+
+#topo h1 {
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 134px;
+    display: block;
+    float: right;
+    padding: 10px;
+     width: 274px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 27px;
+    padding-left: 95px;
+}
+#topo img {
+    float:left;
+    position: absolute;
+    margin-left: -35px;
+}
+
+ #ranking{
+     background-color: #fff;
+     width: 342px;
+     margin: auto;
+     border-radius: 3px;
+     display: block;
+}
+ #ranking ul {
+     clear: both;
+     height: 102px;
+     display: block;
+    border: none;
+}
+#ranking ul li strong {
+    font-size: 18px;
+    color: #b7393a;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 21px;
+    display: block;
+    padding-left: 82px;
+}
+ #ranking ul:nth-child(even){
+    background-color:#f2eff1;
+}
+#ranking ul li p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #a6a5a6;
+    padding-left: 81px;
+    margin-top: -5px;
+}
+ #ranking ul li {
+    list-style-type: none;
+}
+ #ranking ul li img {
+    border: 3px solid #b7393a;
+}
+ #ranking ul {
+    clear: both;
+}
+ #ranking ul:hover{
+    background-color: #b9393b;
+}
+ #ranking ul:hover strong {
+    color:#fff;
+}
+ #ranking ul:hover p {
+    color:#2b2b2b;
+}
+ #ranking ul:hover li img {
+     border: 3px solid #fff;
+}
+/*.votacao {
+    display:none;
+}
+*/
+ #ranking ul:hover .votacao {
+    display:block;
+}
+ #ranking ul li:first-child {
+    float:left;
+}
+ #ranking ul li .posts-item img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+     margin-bottom: 0.5rem;
+     background-position: center center;
+}
+ .round-container {
+     width: auto;
+     height: 100%;
+}
+ #ranking ul li figure img {
+    border-radius: 100%;
+    width: 64px; 
+    height: 64px;
+}
+#ranking .votacao {
+    position: absolute;
+    right: -164px;
+    top: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#ranking .votacao b {
+    color: #fff;
+    background-color: #b9393b;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+#ranking .votacao tr td {
+    border-right: 1px solid;
+    text-align: center;
+}
+
+#ranking .seta::before {
+    position: absolute;
+    right: -17px;
+    top: 63px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 9px solid #fff;
 }
